@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tarefa</title>
+</head>
+<body>
+    <h3>Matriz</h3>
+    <p>Exercício sobre matrizes</p>
 
+    <h3>Roupas de inverno</h3>
+    <p id="a1"></p>
+
+    <h3>Roupas de verão</h3>
+    <p id="a2"></p>
+
+    <h3>Todas as roupas</h3>
+    <p id="a3"></p>
+
+    <h3>Acessórios</h3>
+    <p id="a4"></p>
+
+    <h3>Divide acessórios ao meio</h3>
+    <p id="a5"></p>
+
+    <h3>Ordem alfabética</h3>
+    <p id="a6"></p>
+
+    <h3>Imprime do 1 ao 3</h3>
+    <p id="a7"></p>
+
+    <h3>Ordem alfabética decrescente</h3>
+    <p id="a8"></p>
+
+    <h3>Primeiro e último</h3>
+    <p id="a9"></p>
+    <p id="a10"></p>
+
+<script>
+    var RInverno = ["moletom", " calça", " toucas", " cachecol", " luvas"];
+        document.getElementById("a1").innerHTML = RInverno;
+
+    var RVerao = [" bermuda", " regata", " chinelo", " boné"];
+        document.getElementById("a2").innerHTML = RVerao;
+
+    var Roupas = RInverno.concat(RVerao); 
+        document.getElementById("a3").innerHTML = Roupas;//vai unir as duas
+    
+    var acessorios = ["Boné", " Relógio", " Colar", " Chapéu", " Cinto", " Pulseira", " Jóia", " Anel"];
+        document.getElementById("a4").innerHTML = acessorios;
+
+    var divisao = acessorios.slice(4); //divide ao meio
+        document.getElementById("a5").innerHTML = divisao;
+
+    var acessorio2 = acessorios.sort();//ordem alfabética
+        document.getElementById("a6").innerHTML = acessorio2;
+
+
+    var acessorio4 = acessorios.slice(1, 4); //imprime do 1 ao 3
+        document.getElementById("a7").innerHTML = acessorio4;
+
+    var acessorio3 = acessorio2.reverse();//ordem alfabética e decrescente
+        document.getElementById("a8").innerHTML = acessorio4;
+
+
+    var acessorio5 = acessorios.indexOf("Boné"); //primeiro
+    var acessorio6 = acessorios.lastIndexOf(" Anel");//ultimo
+    document.getElementById("a").innerHTML = acessorio4;
+    document.getElementById("a8").innerHTML = acessorio4;
+//concatena
+
+
+
+
+    
+
+
+</script>
+
+</body>
+</html>
