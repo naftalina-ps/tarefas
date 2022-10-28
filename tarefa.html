@@ -3,44 +3,54 @@
 <head>
     <meta charset="utf-8">
     <title>Tarefa</title>
+    <link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
-    <h3>Matriz</h3>
-    <p>Exercício sobre matrizes</p>
+<div class="bode">
 
-    <h3>Roupas de inverno</h3>
-    <p id="a1"></p>
+    <div class="titles">
+        <div class="um">
+            <h1>Matriz</h1>
+            <p>Exercício sobre matrizes</p>
+        </div>
+    </div>
 
-    <h3>Roupas de verão</h3>
-    <p id="a2"></p>
+    <div class="dois">
+        <h3>Roupas de inverno</h3>
+        <p id="a1"></p>
 
-    <h3>Todas as roupas</h3>
-    <p id="a3"></p>
+        <h3>Roupas de verão</h3>
+        <p id="a2"></p>
 
-    <h3>Acessórios</h3>
-    <p id="a4"></p>
+        <h3>Todas as roupas</h3>
+        <p id="a3"></p>
 
-    <h3>Divide acessórios ao meio</h3>
-    <p id="a5"></p>
+        <h3>Acessórios</h3>
+        <p id="a4"></p>
 
-    <h3>Ordem alfabética</h3>
-    <p id="a6"></p>
+        <h3>Divide acessórios ao meio</h3>
+        <p id="a5"></p>
 
-    <h3>Imprime do 1 ao 3</h3>
-    <p id="a7"></p>
+        <h3>Ordem alfabética</h3>
+        <p id="a6"></p>
 
-    <h3>Ordem alfabética decrescente</h3>
-    <p id="a8"></p>
+        <h3>Imprime do 1 ao 3</h3>
+        <p id="a7"></p>
 
-    <h3>Primeiro e último</h3>
-    <p id="a9"></p>
-    <p id="a10"></p>
+        <h3>Ordem alfabética decrescente</h3>
+        <p id="a8"></p>
+
+        <h3>Primeiro e último</h3>
+        <p id="a9"></p>
+        <p id="a10"></p>
+    </div>
+</div>
 
 <script>
-    var RInverno = ["moletom", " calça", " toucas", " cachecol", " luvas"];
+    var RInverno = ["Moletom", " Calça", " Toucas", " Cachecol", " Luvas"];
         document.getElementById("a1").innerHTML = RInverno;
 
-    var RVerao = [" bermuda", " regata", " chinelo", " boné"];
+    var RVerao = [" Bermuda", " Regata", " Chinelo", " Boné"];
         document.getElementById("a2").innerHTML = RVerao;
 
     var Roupas = RInverno.concat(RVerao); 
@@ -65,17 +75,43 @@
 
     var acessorio5 = acessorios.indexOf("Boné"); //primeiro
     var acessorio6 = acessorios.lastIndexOf(" Anel");//ultimo
-    document.getElementById("a").innerHTML = acessorio4;
-    document.getElementById("a8").innerHTML = acessorio4;
-//concatena
-
-
-
-
+    document.getElementById("a9").innerHTML = acessorio5;
+    document.getElementById("a10").innerHTML = acessorio6;
+// tentei concatenar e não funcionou
     
-
+    //var test = acessorio5.concat(acessorio6);
+    //document.getElementById("a10").innerHTML = test;
 
 </script>
+
+<style>
+    body{
+    background-color: #f3eae8;
+    color: #1d2c52;
+
+}
+.bode{
+    margin-left: 340px;
+    margin-right: 340px;
+}
+.titles{
+    text-align: center;
+    font-size: 18px;
+}
+.dois{
+    border-style: groove;
+    border-color: #504a78;
+    border-radius: 9px;
+
+}
+h3{
+    margin-left: 5px;
+}
+p{
+    margin-left: 5px;
+}
+</style>
+
 
 </body>
 </html>
