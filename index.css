@@ -1,0 +1,54 @@
+*::selection{
+    color: #000235;
+    background-color: #FFFFFF;
+}
+
+body{
+    background-color: #d4d1d8;
+    color: #3a3d63;
+    margin: 25px;
+}
+/* ------------- BARRA DE NAVEGAÇÃO  ------------- */
+.navbar ol{
+	list-style: none;
+	display: flex;
+    margin: 0;
+	padding: 0;
+	position: sticky;
+	justify-content: center;
+	align-items: center;
+	top: 0px;
+	cursor: pointer;
+	background-color: #fcfcfc;
+	font-size: 19px;
+}
+.nav-list{
+	width: 100%;
+    display: flex;
+}
+.navbar li{
+	float: left;
+}
+.nav-list li {
+    list-style: none;
+    padding: 20px;
+}
+.navbar li a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.navbar li a:hover{
+	background-color: #b53333;
+}
+
+/* ------------- BARRA DE NAVEGAÇÃO  ------------- */
+
+.imagem{
+    width:200px;
+    height:120px;
+    margin-left:50px;
+    margin-top:50px;
+}
